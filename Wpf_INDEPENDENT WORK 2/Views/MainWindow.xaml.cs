@@ -23,7 +23,6 @@ namespace Wpf_INDEPENDENT_WORK_2
         public MainWindow()
         {
             InitializeComponent();
-            textBlock.Text=1234.567.ToString("N2");
         }
     }
 }

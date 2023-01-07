@@ -4,8 +4,12 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Wpf_INDEPENDENT_WORK_2"
+        xmlns:vm="clr-namespace:Wpf_INDEPENDENT_WORK_2.ViewModels"
         mc:Ignorable="d"
-        Title="Calculator" Height="600" Width="450" Background="Black">
+        Title="Calculator" Height="400" Width="300" Background="Black" ResizeMode="CanMinimize">
+    <Window.DataContext>
+        <vm:MainWindowViewModel/>
+    </Window.DataContext>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -15,8 +19,7 @@
             Grid.Row="0"
             Background="#FFC2E0D6"
             BorderThickness="2"
-            Height="100"
-            >
+            Height="65">
             <Border.BorderBrush>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FF103D8B"/>
@@ -25,17 +28,21 @@
                 </LinearGradientBrush>
             </Border.BorderBrush>
             <TextBlock
-                x:Name="textBlock"
-                Text=""
+                Text="{Binding Result}"
                 FontFamily="Arial"
                 FontSize="30"
                 TextAlignment="Right"
-                VerticalAlignment="Bottom"
-                   />
+                VerticalAlignment="Bottom"/>
         </Border>
         <UniformGrid Rows="4" Columns="4" Grid.Row="1">
             <Border>
-                <Button Content="7" FontSize="35" FontFamily="Arial" Foreground="White" Background="Black" BorderThickness="1" Margin="1">
+                <Button Content="7" FontSize="35"
+                        FontFamily="Arial"
+                        Foreground="White"
+                        Background="Black"
+                        BorderThickness="1"
+                        Margin="1"
+                        Command="{Binding OnCommand_But_7}">
                     <Button.Resources>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius" Value="15"/>
@@ -50,7 +57,14 @@
                 </Button>
             </Border>
             <Border>
-                <Button Content="8" FontSize="35" FontFamily="Arial" Foreground="White" Background="Black" BorderThickness="1" Margin="1">
+                <Button Content="8"
+                        FontSize="35"
+                        FontFamily="Arial"
+                        Foreground="White"
+                        Background="Black"
+                        BorderThickness="1"
+                        Margin="1"
+                        Command="{Binding OnCommand_But_8}">
                     <Button.Resources>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius" Value="15"/>
@@ -65,7 +79,13 @@
                 </Button>
             </Border>
             <Border>
-                <Button Content="9" FontSize="35" FontFamily="Arial" Foreground="White" Background="Black" BorderThickness="1" Margin="1">
+                <Button Content="9" FontSize="35"
+                        FontFamily="Arial"
+                        Foreground="White"
+                        Background="Black"
+                        BorderThickness="1"
+                        Margin="1"
+                        Command="{Binding OnCommand_But_9}">
                     <Button.Resources>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius" Value="15"/>
@@ -80,7 +100,14 @@
                 </Button>
             </Border>
             <Border>
-                <Button Content="x" FontSize="35" FontFamily="Arial" Foreground="White"  BorderBrush="White" BorderThickness="1" Margin="1" >
+                <Button Content="÷"
+                        FontSize="40"
+                        FontFamily="Arial"
+                        Foreground="White"
+                        BorderBrush="White"
+                        BorderThickness="1"
+                        Margin="1" 
+                        Command="{Binding OnCommand_But_Div}">
                     <Button.Background>
                         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                             <GradientStop Color="#FF4EEACE" Offset="0"/>
@@ -92,7 +119,14 @@
                 </Button>
             </Border>
             <Border>
-                <Button Content="4" FontSize="35" FontFamily="Arial" Foreground="White" Background="Black" BorderThickness="1" Margin="1">
+                <Button Content="4"
+                        FontSize="35"
+                        FontFamily="Arial"
+                        Foreground="White"
+                        Background="Black"
+                        BorderThickness="1"
+                        Margin="1"
+                        Command="{Binding OnCommand_But_4}">
                     <Button.Resources>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius" Value="15"/>
@@ -107,7 +141,14 @@
                 </Button>
             </Border>
             <Border>
-                <Button Content="5" FontSize="35" FontFamily="Arial" Foreground="White" Background="Black" BorderThickness="1" Margin="1">
+                <Button Content="5"
+                        FontSize="35"
+                        FontFamily="Arial"
+                        Foreground="White"
+                        Background="Black"
+                        BorderThickness="1"
+                        Margin="1"
+                        Command="{Binding OnCommand_But_5}">
                     <Button.Resources>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius" Value="15"/>
@@ -122,7 +163,14 @@
                 </Button>
             </Border>
             <Border>
-                <Button Content="6" FontSize="35" FontFamily="Arial" Foreground="White" Background="Black" BorderThickness="1" Margin="1">
+                <Button Content="6"
+                        FontSize="35"
+                        FontFamily="Arial"
+                        Foreground="White"
+                        Background="Black"
+                        BorderThickness="1"
+                        Margin="1"
+                        Command="{Binding OnCommand_But_6}">
                     <Button.Resources>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius" Value="15"/>
@@ -137,7 +185,14 @@
                 </Button>
             </Border>
             <Border>
-                <Button Content="-" FontSize="55" FontFamily="Arial" Foreground="White"  BorderBrush="White" BorderThickness="1" Margin="1" >
+                <Button Content="х"
+                        FontSize="35"
+                        FontFamily="Arial"
+                        Foreground="White"
+                        BorderBrush="White" 
+                        BorderThickness="1"
+                        Margin="1"
+                        Command="{Binding OnCommand_But_Mult}">
                     <Button.Background>
                         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                             <GradientStop Color="#FF4EEACE" Offset="0"/>
@@ -149,7 +204,14 @@
                 </Button>
             </Border>
             <Border>
-                <Button Content="1" FontSize="35" FontFamily="Arial" Foreground="White" Background="Black" BorderThickness="1" Margin="1">
+                <Button Content="1"
+                        FontSize="35"
+                        FontFamily="Arial"
+                        Foreground="White"
+                        Background="Black"
+                        BorderThickness="1"
+                        Margin="1"
+                        Command="{Binding OnCommand_But_1}">
                     <Button.Resources>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius" Value="15"/>
@@ -164,7 +226,14 @@
                 </Button>
             </Border>
             <Border>
-                <Button Content="2" FontSize="35" FontFamily="Arial" Foreground="White" Background="Black" BorderThickness="1" Margin="1">
+                <Button Content="2"
+                        FontSize="35"
+                        FontFamily="Arial"
+                        Foreground="White"
+                        Background="Black"
+                        BorderThickness="1"
+                        Margin="1"
+                        Command="{Binding OnCommand_But_2}">
                     <Button.Resources>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius" Value="15"/>
@@ -179,7 +248,14 @@
                 </Button>
             </Border>
             <Border>
-                <Button Content="3" FontSize="35" FontFamily="Arial" Foreground="White" Background="Black" BorderThickness="1" Margin="1">
+                <Button Content="3"
+                        FontSize="35"
+                        FontFamily="Arial"
+                        Foreground="White"
+                        Background="Black"
+                        BorderThickness="1"
+                        Margin="1"
+                        Command="{Binding OnCommand_But_3}">
                     <Button.Resources>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius" Value="15"/>
@@ -194,7 +270,14 @@
                 </Button>
             </Border>
             <Border>
-                <Button Content="+" FontSize="40" FontFamily="Arial" Foreground="White"  BorderBrush="White" BorderThickness="1" Margin="1" >
+                <Button Content="-"
+                        FontSize="55"
+                        FontFamily="Arial"
+                        Foreground="White"
+                        BorderBrush="White"
+                        BorderThickness="1"
+                        Margin="1" 
+                        Command="{Binding OnCommand_But_Minus}">
                     <Button.Background>
                         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                             <GradientStop Color="#FF4EEACE" Offset="0"/>
@@ -206,7 +289,14 @@
                 </Button>
             </Border>
             <Border>
-                <Button Content="+/-" FontSize="35" FontFamily="Arial" Foreground="White" Background="Black" BorderThickness="1" Margin="1">
+                <Button Content="0"
+                        FontSize="35"
+                        FontFamily="Arial"
+                        Foreground="White"
+                        Background="Black"
+                        BorderThickness="1"
+                        Margin="1"
+                        Command="{Binding OnCommand_But_0}">
                     <Button.Resources>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius" Value="15"/>
@@ -221,7 +311,14 @@
                 </Button>
             </Border>
             <Border>
-                <Button Content="0" FontSize="35" FontFamily="Arial" Foreground="White" Background="Black" BorderThickness="1" Margin="1">
+                <Button Content="C"
+                        FontSize="35"
+                        FontFamily="Arial"
+                        Foreground="White"
+                        Background="Black"
+                        BorderThickness="1"
+                        Margin="1"
+                        Command="{Binding Command_Clear}">
                     <Button.Resources>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius" Value="15"/>
@@ -236,22 +333,33 @@
                 </Button>
             </Border>
             <Border>
-                <Button Content="," FontSize="35" FontFamily="Arial" Foreground="White" Background="Black" BorderThickness="1" Margin="1">
-                    <Button.Resources>
-                        <Style TargetType="{x:Type Border}">
-                            <Setter Property="CornerRadius" Value="15"/>
-                        </Style>
-                    </Button.Resources>
-                    <Button.BorderBrush>
+                <Button Content="="
+                        FontSize="40"
+                        FontFamily="Arial"
+                        Foreground="White"
+                        BorderBrush="White"
+                        BorderThickness="1"
+                        Margin="1"
+                        Command="{Binding ResultCommand}">
+                    <Button.Background>
                         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                            <GradientStop Color="#FF103D8B" Offset="0"/>
-                            <GradientStop Color="White" Offset="1"/>
+                            <GradientStop Color="#FF4EEACE" Offset="0"/>
+                            <GradientStop Color="#FF011011" Offset="1"/>
+                            <GradientStop Color="#FF072221" Offset="0.346"/>
+                            <GradientStop Color="#FF0F7474" Offset="0.689"/>
                         </LinearGradientBrush>
-                    </Button.BorderBrush>
+                    </Button.Background>
                 </Button>
             </Border>
             <Border>
-                <Button Content="=" FontSize="40" FontFamily="Arial" Foreground="White"  BorderBrush="White" BorderThickness="1" Margin="1" >
+                <Button Content="+"
+                        FontSize="40"
+                        FontFamily="Arial"
+                        Foreground="White"
+                        BorderBrush="White"
+                        BorderThickness="1"
+                        Margin="1"
+                        Command="{Binding OnCommand_But_Plus}">
                     <Button.Background>
                         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                             <GradientStop Color="#FF4EEACE" Offset="0"/>
