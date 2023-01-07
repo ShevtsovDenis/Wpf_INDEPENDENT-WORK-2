@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Wpf_INDEPENDENT_WORK_2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="800" Width="450" Background="Black">
+        Title="Calculator" Height="600" Width="450" Background="Black">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -33,103 +33,7 @@
                 VerticalAlignment="Bottom"
                    />
         </Border>
-        <UniformGrid Rows="6" Columns="4" Grid.Row="1">
-            <Border>
-                <Button Content="%" FontSize="25" FontFamily="Arial" Foreground="White"  BorderBrush="White" BorderThickness="1" Margin="1" >
-                    <Button.Background>
-                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                            <GradientStop Color="#FF4EEACE" Offset="0"/>
-                            <GradientStop Color="#FF011011" Offset="1"/>
-                            <GradientStop Color="#FF072221" Offset="0.346"/>
-                            <GradientStop Color="#FF0F7474" Offset="0.689"/>
-                        </LinearGradientBrush>
-                    </Button.Background>
-                </Button>
-            </Border>
-            <Border>
-                <Button Content="CE" FontSize="25" FontFamily="Arial" Foreground="White"  BorderBrush="White" BorderThickness="1" Margin="1" >
-                    <Button.Background>
-                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                            <GradientStop Color="#FF4EEACE" Offset="0"/>
-                            <GradientStop Color="#FF011011" Offset="1"/>
-                            <GradientStop Color="#FF072221" Offset="0.346"/>
-                            <GradientStop Color="#FF0F7474" Offset="0.689"/>
-                        </LinearGradientBrush>
-                    </Button.Background>
-                </Button>
-            </Border>
-            <Border>
-                <Button Content="C" FontSize="25" FontFamily="Arial" Foreground="White"  BorderBrush="White" BorderThickness="1" Margin="1" >
-                    <Button.Background>
-                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                            <GradientStop Color="#FF4EEACE" Offset="0"/>
-                            <GradientStop Color="#FF011011" Offset="1"/>
-                            <GradientStop Color="#FF072221" Offset="0.346"/>
-                            <GradientStop Color="#FF0F7474" Offset="0.689"/>
-                        </LinearGradientBrush>
-                    </Button.Background>
-                </Button>
-            </Border>
-            <Border>
-                <Button Content="←" FontSize="35" FontFamily="Arial" Foreground="White"  BorderBrush="White" BorderThickness="1" Margin="1" >
-                    <Button.Background>
-                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                            <GradientStop Color="#FF4EEACE" Offset="0"/>
-                            <GradientStop Color="#FF011011" Offset="1"/>
-                            <GradientStop Color="#FF072221" Offset="0.346"/>
-                            <GradientStop Color="#FF0F7474" Offset="0.689"/>
-                        </LinearGradientBrush>
-                    </Button.Background>
-                </Button>
-            </Border>
-            <Border>
-                <Button Content="1/x" FontSize="25" FontFamily="Arial" Foreground="White"  BorderBrush="White" BorderThickness="1" Margin="1" >
-                    <Button.Background>
-                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                            <GradientStop Color="#FF4EEACE" Offset="0"/>
-                            <GradientStop Color="#FF011011" Offset="1"/>
-                            <GradientStop Color="#FF072221" Offset="0.346"/>
-                            <GradientStop Color="#FF0F7474" Offset="0.689"/>
-                        </LinearGradientBrush>
-                    </Button.Background>
-                </Button>
-            </Border>
-            <Border>
-                <Button Content="x²" FontSize="25" FontFamily="Arial" Foreground="White"  BorderBrush="White" BorderThickness="1" Margin="1" >
-                    <Button.Background>
-                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                            <GradientStop Color="#FF4EEACE" Offset="0"/>
-                            <GradientStop Color="#FF011011" Offset="1"/>
-                            <GradientStop Color="#FF072221" Offset="0.346"/>
-                            <GradientStop Color="#FF0F7474" Offset="0.689"/>
-                        </LinearGradientBrush>
-                    </Button.Background>
-                </Button>
-            </Border>
-            <Border>
-                <Button Content="√x" FontSize="25" FontFamily="Arial" Foreground="White"  BorderBrush="White" BorderThickness="1" Margin="1" >
-                    <Button.Background>
-                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                            <GradientStop Color="#FF4EEACE" Offset="0"/>
-                            <GradientStop Color="#FF011011" Offset="1"/>
-                            <GradientStop Color="#FF072221" Offset="0.346"/>
-                            <GradientStop Color="#FF0F7474" Offset="0.689"/>
-                        </LinearGradientBrush>
-                    </Button.Background>
-                </Button>
-            </Border>
-            <Border>
-                <Button Content="÷" FontSize="40" FontFamily="Arial" Foreground="White"  BorderBrush="White" BorderThickness="1" Margin="1" >
-                    <Button.Background>
-                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                            <GradientStop Color="#FF4EEACE" Offset="0"/>
-                            <GradientStop Color="#FF011011" Offset="1"/>
-                            <GradientStop Color="#FF072221" Offset="0.346"/>
-                            <GradientStop Color="#FF0F7474" Offset="0.689"/>
-                        </LinearGradientBrush>
-                    </Button.Background>
-                </Button>
-            </Border>
+        <UniformGrid Rows="4" Columns="4" Grid.Row="1">
             <Border>
                 <Button Content="7" FontSize="35" FontFamily="Arial" Foreground="White" Background="Black" BorderThickness="1" Margin="1">
                     <Button.Resources>
@@ -359,6 +263,5 @@
                 </Button>
             </Border>
         </UniformGrid>
-
     </Grid>
 </Window>
