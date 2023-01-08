@@ -28,7 +28,7 @@
                 </LinearGradientBrush>
             </Border.BorderBrush>
             <TextBlock
-                Text="{Binding Result}"
+                Text="{Binding Text}"
                 FontFamily="Arial"
                 FontSize="30"
                 TextAlignment="Right"
