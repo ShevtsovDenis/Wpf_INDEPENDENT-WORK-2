@@ -79,7 +79,7 @@ namespace Wpf_INDEPENDENT_WORK_2.ViewModels
             }
         }
         //создаем команду для вычисления результата
-        public ICommand ResultCommand { get; }//используется только для чтения, поэтому сеттер ен прописываем
+        public ICommand ResultCommand { get; }//используется только для чтения, поэтому сеттер не прописываем
         private void OnResultCommandExecute(object p)//создаем метод, который передадим в execute
         {
             Result = Text + "=" + Calculation.GetResult(Text);//вызываем класс из папки Models и метод, вычисляющий результат

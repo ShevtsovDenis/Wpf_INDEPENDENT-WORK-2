@@ -36,340 +36,161 @@
         </Border>
         <UniformGrid Rows="4" Columns="4" Grid.Row="1">
             <Border>
-                <Button Content="7" FontSize="35"
-                        FontFamily="Arial"
-                        Foreground="White"
-                        Background="Black"
-                        BorderThickness="1"
-                        Margin="1"
+                <Button Content="7" 
+                        FontSize="35"
+                        Style="{StaticResource NumButton}"
                         Command="{Binding OnCommand_But_7}">
                     <Button.Resources>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius" Value="15"/>
                         </Style>
                     </Button.Resources>
-                    <Button.BorderBrush>
-                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                            <GradientStop Color="#FF103D8B" Offset="0"/>
-                            <GradientStop Color="White" Offset="1"/>
-                        </LinearGradientBrush>
-                    </Button.BorderBrush>
                 </Button>
             </Border>
             <Border>
                 <Button Content="8"
                         FontSize="35"
-                        FontFamily="Arial"
-                        Foreground="White"
-                        Background="Black"
-                        BorderThickness="1"
-                        Margin="1"
+                        Style="{StaticResource NumButton}"
                         Command="{Binding OnCommand_But_8}">
                     <Button.Resources>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius" Value="15"/>
                         </Style>
                     </Button.Resources>
-                    <Button.BorderBrush>
-                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                            <GradientStop Color="#FF103D8B" Offset="0"/>
-                            <GradientStop Color="White" Offset="1"/>
-                        </LinearGradientBrush>
-                    </Button.BorderBrush>
                 </Button>
             </Border>
             <Border>
                 <Button Content="9" FontSize="35"
-                        FontFamily="Arial"
-                        Foreground="White"
-                        Background="Black"
-                        BorderThickness="1"
-                        Margin="1"
+                        Style="{StaticResource NumButton}"
                         Command="{Binding OnCommand_But_9}">
                     <Button.Resources>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius" Value="15"/>
                         </Style>
                     </Button.Resources>
-                    <Button.BorderBrush>
-                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                            <GradientStop Color="#FF103D8B" Offset="0"/>
-                            <GradientStop Color="White" Offset="1"/>
-                        </LinearGradientBrush>
-                    </Button.BorderBrush>
                 </Button>
             </Border>
-            <Border>
                 <Button Content="÷"
                         FontSize="40"
-                        FontFamily="Arial"
-                        Foreground="White"
-                        BorderBrush="White"
-                        BorderThickness="1"
-                        Margin="1" 
+                        Style="{StaticResource OperButton}"
                         Command="{Binding OnCommand_But_Div}">
-                    <Button.Background>
-                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                            <GradientStop Color="#FF4EEACE" Offset="0"/>
-                            <GradientStop Color="#FF011011" Offset="1"/>
-                            <GradientStop Color="#FF072221" Offset="0.346"/>
-                            <GradientStop Color="#FF0F7474" Offset="0.689"/>
-                        </LinearGradientBrush>
-                    </Button.Background>
                 </Button>
-            </Border>
             <Border>
                 <Button Content="4"
                         FontSize="35"
-                        FontFamily="Arial"
-                        Foreground="White"
-                        Background="Black"
-                        BorderThickness="1"
-                        Margin="1"
+                        Style="{StaticResource NumButton}"
                         Command="{Binding OnCommand_But_4}">
                     <Button.Resources>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius" Value="15"/>
                         </Style>
                     </Button.Resources>
-                    <Button.BorderBrush>
-                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                            <GradientStop Color="#FF103D8B" Offset="0"/>
-                            <GradientStop Color="White" Offset="1"/>
-                        </LinearGradientBrush>
-                    </Button.BorderBrush>
                 </Button>
             </Border>
             <Border>
                 <Button Content="5"
                         FontSize="35"
-                        FontFamily="Arial"
-                        Foreground="White"
-                        Background="Black"
-                        BorderThickness="1"
-                        Margin="1"
+                        Style="{StaticResource NumButton}"
                         Command="{Binding OnCommand_But_5}">
                     <Button.Resources>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius" Value="15"/>
                         </Style>
                     </Button.Resources>
-                    <Button.BorderBrush>
-                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                            <GradientStop Color="#FF103D8B" Offset="0"/>
-                            <GradientStop Color="White" Offset="1"/>
-                        </LinearGradientBrush>
-                    </Button.BorderBrush>
                 </Button>
             </Border>
             <Border>
                 <Button Content="6"
                         FontSize="35"
-                        FontFamily="Arial"
-                        Foreground="White"
-                        Background="Black"
-                        BorderThickness="1"
-                        Margin="1"
+                        Style="{StaticResource NumButton}"
                         Command="{Binding OnCommand_But_6}">
                     <Button.Resources>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius" Value="15"/>
                         </Style>
                     </Button.Resources>
-                    <Button.BorderBrush>
-                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                            <GradientStop Color="#FF103D8B" Offset="0"/>
-                            <GradientStop Color="White" Offset="1"/>
-                        </LinearGradientBrush>
-                    </Button.BorderBrush>
                 </Button>
             </Border>
-            <Border>
                 <Button Content="х"
                         FontSize="35"
-                        FontFamily="Arial"
-                        Foreground="White"
-                        BorderBrush="White" 
-                        BorderThickness="1"
-                        Margin="1"
+                        Style="{StaticResource OperButton}"
                         Command="{Binding OnCommand_But_Mult}">
-                    <Button.Background>
-                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                            <GradientStop Color="#FF4EEACE" Offset="0"/>
-                            <GradientStop Color="#FF011011" Offset="1"/>
-                            <GradientStop Color="#FF072221" Offset="0.346"/>
-                            <GradientStop Color="#FF0F7474" Offset="0.689"/>
-                        </LinearGradientBrush>
-                    </Button.Background>
                 </Button>
-            </Border>
             <Border>
                 <Button Content="1"
                         FontSize="35"
-                        FontFamily="Arial"
-                        Foreground="White"
-                        Background="Black"
-                        BorderThickness="1"
-                        Margin="1"
+                        Style="{StaticResource NumButton}"
                         Command="{Binding OnCommand_But_1}">
                     <Button.Resources>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius" Value="15"/>
                         </Style>
                     </Button.Resources>
-                    <Button.BorderBrush>
-                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                            <GradientStop Color="#FF103D8B" Offset="0"/>
-                            <GradientStop Color="White" Offset="1"/>
-                        </LinearGradientBrush>
-                    </Button.BorderBrush>
                 </Button>
             </Border>
             <Border>
                 <Button Content="2"
                         FontSize="35"
-                        FontFamily="Arial"
-                        Foreground="White"
-                        Background="Black"
-                        BorderThickness="1"
-                        Margin="1"
+                        Style="{StaticResource NumButton}"
                         Command="{Binding OnCommand_But_2}">
                     <Button.Resources>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius" Value="15"/>
                         </Style>
                     </Button.Resources>
-                    <Button.BorderBrush>
-                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                            <GradientStop Color="#FF103D8B" Offset="0"/>
-                            <GradientStop Color="White" Offset="1"/>
-                        </LinearGradientBrush>
-                    </Button.BorderBrush>
                 </Button>
             </Border>
             <Border>
                 <Button Content="3"
                         FontSize="35"
-                        FontFamily="Arial"
-                        Foreground="White"
-                        Background="Black"
-                        BorderThickness="1"
-                        Margin="1"
+                        Style="{StaticResource NumButton}"
                         Command="{Binding OnCommand_But_3}">
                     <Button.Resources>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius" Value="15"/>
                         </Style>
                     </Button.Resources>
-                    <Button.BorderBrush>
-                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                            <GradientStop Color="#FF103D8B" Offset="0"/>
-                            <GradientStop Color="White" Offset="1"/>
-                        </LinearGradientBrush>
-                    </Button.BorderBrush>
                 </Button>
             </Border>
-            <Border>
                 <Button Content="-"
                         FontSize="55"
-                        FontFamily="Arial"
-                        Foreground="White"
-                        BorderBrush="White"
-                        BorderThickness="1"
-                        Margin="1" 
+                        Style="{StaticResource OperButton}"
                         Command="{Binding OnCommand_But_Minus}">
-                    <Button.Background>
-                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                            <GradientStop Color="#FF4EEACE" Offset="0"/>
-                            <GradientStop Color="#FF011011" Offset="1"/>
-                            <GradientStop Color="#FF072221" Offset="0.346"/>
-                            <GradientStop Color="#FF0F7474" Offset="0.689"/>
-                        </LinearGradientBrush>
-                    </Button.Background>
                 </Button>
-            </Border>
             <Border>
                 <Button Content="0"
                         FontSize="35"
-                        FontFamily="Arial"
-                        Foreground="White"
-                        Background="Black"
-                        BorderThickness="1"
-                        Margin="1"
+                        Style="{StaticResource NumButton}"
                         Command="{Binding OnCommand_But_0}">
                     <Button.Resources>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius" Value="15"/>
                         </Style>
                     </Button.Resources>
-                    <Button.BorderBrush>
-                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                            <GradientStop Color="#FF103D8B" Offset="0"/>
-                            <GradientStop Color="White" Offset="1"/>
-                        </LinearGradientBrush>
-                    </Button.BorderBrush>
                 </Button>
             </Border>
             <Border>
                 <Button Content="C"
                         FontSize="35"
-                        FontFamily="Arial"
-                        Foreground="White"
-                        Background="Black"
-                        BorderThickness="1"
-                        Margin="1"
+                        Style="{StaticResource NumButton}"
                         Command="{Binding Command_Clear}">
                     <Button.Resources>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius" Value="15"/>
                         </Style>
                     </Button.Resources>
-                    <Button.BorderBrush>
-                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                            <GradientStop Color="#FF103D8B" Offset="0"/>
-                            <GradientStop Color="White" Offset="1"/>
-                        </LinearGradientBrush>
-                    </Button.BorderBrush>
                 </Button>
             </Border>
-            <Border>
                 <Button Content="="
                         FontSize="40"
-                        FontFamily="Arial"
-                        Foreground="White"
-                        BorderBrush="White"
-                        BorderThickness="1"
-                        Margin="1"
+                        Style="{StaticResource OperButton}"
                         Command="{Binding ResultCommand}">
-                    <Button.Background>
-                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                            <GradientStop Color="#FF4EEACE" Offset="0"/>
-                            <GradientStop Color="#FF011011" Offset="1"/>
-                            <GradientStop Color="#FF072221" Offset="0.346"/>
-                            <GradientStop Color="#FF0F7474" Offset="0.689"/>
-                        </LinearGradientBrush>
-                    </Button.Background>
                 </Button>
-            </Border>
-            <Border>
                 <Button Content="+"
                         FontSize="40"
-                        FontFamily="Arial"
-                        Foreground="White"
-                        BorderBrush="White"
-                        BorderThickness="1"
-                        Margin="1"
+                        Style="{StaticResource OperButton}"
                         Command="{Binding OnCommand_But_Plus}">
-                    <Button.Background>
-                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                            <GradientStop Color="#FF4EEACE" Offset="0"/>
-                            <GradientStop Color="#FF011011" Offset="1"/>
-                            <GradientStop Color="#FF072221" Offset="0.346"/>
-                            <GradientStop Color="#FF0F7474" Offset="0.689"/>
-                        </LinearGradientBrush>
-                    </Button.Background>
                 </Button>
-            </Border>
         </UniformGrid>
     </Grid>
 </Window>
