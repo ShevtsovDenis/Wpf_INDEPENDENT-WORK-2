@@ -12,7 +12,7 @@ namespace Wpf_INDEPENDENT_WORK_2.Models
     {
         public static string GetResult(string str)
         {
-            return new DataTable().Compute(str, null).ToString();
+            return new DataTable().Compute(str, null).ToString();//создаем экземпляр класса DataTable и вызываем метод Compute. В качестве аргумента передаем Text (собранную строку для вычисления). Вызываем метод ToString для приведения результата к типу string
         }
     }
 }
